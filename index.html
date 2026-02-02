@@ -1,0 +1,2043 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Batch Masikhay 2026 — Graduation Budget Proposal</title>
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>"
+        />
+        <style>
+            :root {
+                --purple-900: #581c87;
+                --purple-800: #6b21a8;
+                --purple-700: #7e22ce;
+                --purple-600: #9333ea;
+                --purple-500: #a855f7;
+                --purple-400: #c084fc;
+                --purple-300: #d8b4fe;
+                --purple-200: #e9d5ff;
+                --purple-100: #f3e8ff;
+                --purple-50: #faf5ff;
+                --gray-900: #111827;
+                --gray-700: #374151;
+                --gray-600: #4b5563;
+                --gray-500: #6b7280;
+                --gray-400: #9ca3af;
+                --gray-300: #d1d5db;
+                --gray-200: #e5e7eb;
+                --gray-100: #f3f4f6;
+                --gray-50: #f9fafb;
+                --green-700: #15803d;
+                --green-600: #16a34a;
+                --green-100: #dcfce7;
+                --amber-700: #b45309;
+                --amber-600: #d97706;
+                --amber-100: #fef3c7;
+                --amber-50: #fffbeb;
+                --red-700: #b91c1c;
+                --red-100: #fee2e2;
+                --blue-700: #1d4ed8;
+                --blue-100: #dbeafe;
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family:
+                    "Segoe UI",
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    sans-serif;
+                line-height: 1.7;
+                color: var(--gray-700);
+                background: linear-gradient(
+                    180deg,
+                    var(--purple-50) 0%,
+                    white 100%
+                );
+                min-height: 100vh;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 24px;
+            }
+
+            /* Header */
+            header {
+                background: linear-gradient(
+                    135deg,
+                    var(--purple-800) 0%,
+                    var(--purple-600) 100%
+                );
+                color: white;
+                padding: 60px 0 80px;
+                text-align: center;
+                position: relative;
+            }
+
+            header::after {
+                content: "";
+                position: absolute;
+                bottom: -40px;
+                left: 0;
+                right: 0;
+                height: 80px;
+                background: linear-gradient(
+                    135deg,
+                    var(--purple-800) 0%,
+                    var(--purple-600) 100%
+                );
+                clip-path: ellipse(60% 100% at 50% 0%);
+            }
+
+            .header-icon {
+                font-size: 4rem;
+                margin-bottom: 16px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+
+            header .subtitle {
+                font-size: 1.25rem;
+                opacity: 0.9;
+                margin-bottom: 16px;
+            }
+
+            header .date {
+                font-size: 0.9rem;
+                opacity: 0.75;
+            }
+
+            /* Main content */
+            main {
+                position: relative;
+                z-index: 10;
+                padding: 60px 0 80px;
+            }
+
+            section {
+                background: white;
+                border-radius: 16px;
+                padding: 40px;
+                margin-bottom: 32px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            }
+
+            h2 {
+                color: var(--purple-800);
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                padding-bottom: 12px;
+                border-bottom: 3px solid var(--purple-200);
+            }
+
+            h3 {
+                color: var(--purple-700);
+                font-size: 1.15rem;
+                margin: 28px 0 12px;
+            }
+
+            h4 {
+                color: var(--gray-700);
+                font-size: 1rem;
+                margin: 20px 0 8px;
+            }
+
+            p {
+                margin-bottom: 16px;
+            }
+
+            /* Key figures grid */
+            .key-figures {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 16px;
+                margin: 24px 0;
+            }
+
+            .key-figure {
+                background: var(--purple-50);
+                border: 2px solid var(--purple-200);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .key-figure .value {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--purple-800);
+                line-height: 1.2;
+            }
+
+            .key-figure .label {
+                font-size: 0.85rem;
+                color: var(--gray-600);
+                margin-top: 4px;
+            }
+
+            /* Callout boxes */
+            .callout {
+                border-radius: 12px;
+                padding: 20px 24px;
+                margin: 24px 0;
+            }
+
+            .callout-warning {
+                background: var(--amber-50);
+                border-left: 4px solid var(--amber-600);
+            }
+
+            .callout-info {
+                background: var(--blue-100);
+                border-left: 4px solid var(--blue-700);
+            }
+
+            .callout-success {
+                background: var(--green-100);
+                border-left: 4px solid var(--green-600);
+            }
+
+            .callout-title {
+                font-weight: 600;
+                margin-bottom: 8px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .callout-warning .callout-title {
+                color: var(--amber-700);
+            }
+            .callout-info .callout-title {
+                color: var(--blue-700);
+            }
+            .callout-success .callout-title {
+                color: var(--green-700);
+            }
+
+            /* Tables */
+            .table-wrapper {
+                overflow-x: auto;
+                margin: 20px 0;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 0.9rem;
+            }
+
+            th,
+            td {
+                padding: 12px 16px;
+                text-align: left;
+                border-bottom: 1px solid var(--gray-200);
+            }
+
+            th {
+                background: var(--purple-100);
+                color: var(--purple-900);
+                font-weight: 600;
+                white-space: nowrap;
+            }
+
+            tr:hover {
+                background: var(--gray-50);
+            }
+
+            .text-right {
+                text-align: right;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            /* Special table rows */
+            .row-highlight {
+                background: var(--purple-50) !important;
+            }
+
+            .row-total {
+                background: var(--purple-600) !important;
+                color: white;
+                font-weight: 600;
+            }
+
+            .row-total td {
+                border-color: var(--purple-500);
+            }
+
+            .row-subtotal {
+                background: var(--gray-100) !important;
+                font-weight: 600;
+            }
+
+            /* Confidence badges */
+            .confidence {
+                display: inline-block;
+                padding: 2px 8px;
+                border-radius: 4px;
+                font-size: 0.75rem;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            .confidence-high {
+                background: var(--green-100);
+                color: var(--green-700);
+            }
+
+            .confidence-medium {
+                background: var(--amber-100);
+                color: var(--amber-700);
+            }
+
+            .confidence-low {
+                background: var(--red-100);
+                color: var(--red-700);
+            }
+
+            /* Source citations */
+            .source {
+                font-size: 0.8rem;
+                color: var(--gray-500);
+                margin-top: 4px;
+            }
+
+            .source a {
+                color: var(--purple-600);
+                text-decoration: none;
+            }
+
+            .source a:hover {
+                text-decoration: underline;
+            }
+
+            /* Lists */
+            ul,
+            ol {
+                margin: 12px 0 16px 24px;
+            }
+
+            li {
+                margin-bottom: 8px;
+            }
+
+            /* Methodology box */
+            .methodology {
+                background: var(--gray-50);
+                border: 1px solid var(--gray-200);
+                border-radius: 12px;
+                padding: 24px;
+                margin: 24px 0;
+            }
+
+            .methodology h4 {
+                color: var(--gray-700);
+                margin-top: 0;
+                margin-bottom: 12px;
+                font-size: 0.95rem;
+            }
+
+            .methodology ul {
+                margin-bottom: 0;
+            }
+
+            /* Budget summary card */
+            .budget-summary {
+                background: linear-gradient(
+                    135deg,
+                    var(--purple-700) 0%,
+                    var(--purple-500) 100%
+                );
+                color: white;
+                border-radius: 16px;
+                padding: 32px;
+                margin: 32px 0;
+                text-align: center;
+            }
+
+            .budget-summary h3 {
+                color: white;
+                opacity: 0.9;
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin: 0 0 8px;
+            }
+
+            .budget-summary .amount {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            .budget-summary .per-intern {
+                font-size: 1.25rem;
+                opacity: 0.9;
+                margin-top: 8px;
+            }
+
+            .budget-summary .note {
+                font-size: 0.9rem;
+                opacity: 0.75;
+                margin-top: 16px;
+            }
+
+            /* Comparison table */
+            .comparison-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+                margin: 24px 0;
+            }
+
+            .comparison-card {
+                border: 2px solid var(--gray-200);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .comparison-card.recommended {
+                border-color: var(--purple-500);
+                background: var(--purple-50);
+            }
+
+            .comparison-card .tier {
+                font-size: 0.85rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: var(--gray-500);
+                margin-bottom: 8px;
+            }
+
+            .comparison-card.recommended .tier {
+                color: var(--purple-600);
+            }
+
+            .comparison-card .price {
+                font-size: 1.75rem;
+                font-weight: 700;
+                color: var(--gray-900);
+            }
+
+            .comparison-card.recommended .price {
+                color: var(--purple-700);
+            }
+
+            .comparison-card .total {
+                font-size: 0.85rem;
+                color: var(--gray-500);
+            }
+
+            .comparison-card .badge {
+                display: inline-block;
+                background: var(--purple-600);
+                color: white;
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.75rem;
+                font-weight: 600;
+                margin-top: 12px;
+            }
+
+            /* Timeline */
+            .timeline {
+                position: relative;
+                padding-left: 32px;
+                margin: 24px 0;
+            }
+
+            .timeline::before {
+                content: "";
+                position: absolute;
+                left: 8px;
+                top: 8px;
+                bottom: 8px;
+                width: 2px;
+                background: var(--purple-200);
+            }
+
+            .timeline-item {
+                position: relative;
+                margin-bottom: 24px;
+            }
+
+            .timeline-item::before {
+                content: "";
+                position: absolute;
+                left: -28px;
+                top: 6px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: var(--purple-500);
+                border: 3px solid var(--purple-200);
+            }
+
+            .timeline-date {
+                font-weight: 600;
+                color: var(--purple-700);
+                font-size: 0.9rem;
+            }
+
+            .timeline-content {
+                color: var(--gray-600);
+                font-size: 0.95rem;
+            }
+
+            /* Footer */
+            footer {
+                text-align: center;
+                padding: 40px 24px 60px;
+                color: var(--gray-500);
+            }
+
+            footer .tagline {
+                color: var(--purple-600);
+                font-weight: 600;
+                font-size: 1.1rem;
+                margin-bottom: 8px;
+            }
+
+            /* Print styles */
+            @media print {
+                body {
+                    background: white;
+                }
+
+                header {
+                    background: var(--purple-800);
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+
+                header::after {
+                    display: none;
+                }
+
+                section {
+                    box-shadow: none;
+                    border: 1px solid var(--gray-200);
+                    break-inside: avoid;
+                }
+
+                .budget-summary {
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+            }
+
+            /* Responsive */
+            @media (max-width: 768px) {
+                header {
+                    padding: 40px 0 60px;
+                }
+
+                header h1 {
+                    font-size: 1.75rem;
+                }
+
+                section {
+                    padding: 24px;
+                    border-radius: 12px;
+                }
+
+                .comparison-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .key-figures {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                .budget-summary .amount {
+                    font-size: 2.25rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-icon">🎓</div>
+                <h1>Batch Masikhay 2026</h1>
+                <p class="subtitle">Graduation Day Budget Proposal</p>
+                <p class="date">February 2026 • Graduation Committee</p>
+            </div>
+        </header>
+
+        <main class="container">
+            <!-- Executive Summary -->
+            <section>
+                <h2>Overview</h2>
+                <p>
+                    This document presents our estimated budget for Graduation
+                    Day, scheduled for the
+                    <strong>first week of August 2026</strong>. Based on our
+                    batch survey, publicly available supplier rates, and the
+                    previous batch's experience, we're proposing a contribution
+                    of <strong>₱3,000 per intern</strong>.
+                </p>
+
+                <div class="key-figures">
+                    <div class="key-figure">
+                        <div class="value">160</div>
+                        <div class="label">Interns</div>
+                    </div>
+                    <div class="key-figure">
+                        <div class="value">~480</div>
+                        <div class="label">Total Guests</div>
+                    </div>
+                    <div class="key-figure">
+                        <div class="value">₱3,000</div>
+                        <div class="label">Per Intern</div>
+                    </div>
+                    <div class="key-figure">
+                        <div class="value">₱480,000</div>
+                        <div class="label">Total Budget</div>
+                    </div>
+                </div>
+
+                <div class="callout callout-warning">
+                    <div class="callout-title">
+                        ⚠️ Important: These are preliminary estimates
+                    </div>
+                    <p style="margin-bottom: 0">
+                        We have not yet conducted formal canvassing with
+                        suppliers. The figures below are based on publicly
+                        available rates, industry benchmarks, and research
+                        across multiple sources.
+                        <strong>Actual prices may be higher or lower.</strong>
+                        We will update this proposal with real quotations once
+                        canvassing is complete (target: March 2026).
+                    </p>
+                </div>
+
+                <p>
+                    For context, <strong>Batch Saliksik 2025</strong> (last
+                    year's batch) held their graduation at St. Paul University
+                    Manila with an approximate budget of ₱500,000 for ~160
+                    interns. Our target budget of ₱480,000 is in line with this
+                    benchmark.
+                </p>
+            </section>
+
+            <!-- Survey Results -->
+            <section>
+                <h2>Why ₱3,000? Survey Results</h2>
+                <p>
+                    We surveyed the batch in January 2026 to gauge preferences
+                    on budget amount. Out of 48 respondents (30% response rate),
+                    the results showed strong convergence on ₱3,000:
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Measure</th>
+                                <th>Value</th>
+                                <th>Interpretation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="row-highlight">
+                                <td>
+                                    <strong>Mode</strong> (most common answer)
+                                </td>
+                                <td class="text-center">
+                                    <strong>₱3,000</strong>
+                                </td>
+                                <td>21 of 48 respondents (43.8%)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Median</strong> (middle value)</td>
+                                <td class="text-center">
+                                    <strong>₱3,000</strong>
+                                </td>
+                                <td>Half chose ≤₱3,000, half chose ≥₱3,000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Higher amounts</strong> (₱3,500+)
+                                </td>
+                                <td class="text-center">18.8%</td>
+                                <td>9 respondents willing to pay more</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    When all three measures of central tendency (mode, median,
+                    and the practical reference point) converge on the same
+                    value, it gives us reasonable confidence that ₱3,000
+                    reflects the batch's collective preference.
+                </p>
+
+                <h3>Preferred Services</h3>
+                <p>The survey also asked which services are most important:</p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th class="text-center">Votes</th>
+                                <th class="text-center">%</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>📸 Video and Photography Services</td>
+                                <td class="text-center"><strong>42</strong></td>
+                                <td class="text-center">
+                                    <strong>87.5%</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>⛪ Baccalaureate Mass</td>
+                                <td class="text-center">25</td>
+                                <td class="text-center">52.1%</td>
+                            </tr>
+                            <tr>
+                                <td>🎬 Same Day Edit (SDE)</td>
+                                <td class="text-center" colspan="2">
+                                    <em>Mentioned in comments</em>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>📷 Photo Booth</td>
+                                <td class="text-center" colspan="2">
+                                    <em>Mentioned in comments</em>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    These preferences inform our budget priorities:
+                    documentation (pictorial + event coverage) and a meaningful
+                    ceremony with mass are clearly important to most of us.
+                </p>
+            </section>
+
+            <!-- Methodology -->
+            <section>
+                <h2>How We Estimated Costs</h2>
+
+                <div class="methodology">
+                    <h4>📊 Our Approach</h4>
+                    <ul>
+                        <li>
+                            <strong>Multiple sources per category</strong> — We
+                            looked for at least 2-3 suppliers with published or
+                            verifiable rates for each expense category.
+                        </li>
+                        <li>
+                            <strong>Range estimates</strong> — Instead of
+                            single-point estimates, we provide low-mid-high
+                            ranges to capture uncertainty.
+                        </li>
+                        <li>
+                            <strong>Confidence ratings</strong> — Each estimate
+                            is tagged with a confidence level based on data
+                            quality:
+                            <span class="confidence confidence-high">High</span>
+                            = Published rates from supplier websites
+                            <span class="confidence confidence-medium"
+                                >Medium</span
+                            >
+                            = Industry benchmarks or indirect sources
+                            <span class="confidence confidence-low">Low</span> =
+                            Requires direct quotation
+                        </li>
+                        <li>
+                            <strong>Conservative bias</strong> — When uncertain,
+                            we lean toward higher estimates to reduce the risk
+                            of budget shortfall.
+                        </li>
+                        <li>
+                            <strong>10% contingency</strong> — Built into the
+                            final budget for unforeseen expenses.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="callout callout-info">
+                    <div class="callout-title">📋 What this means</div>
+                    <p style="margin-bottom: 0">
+                        The estimates below represent our best effort to predict
+                        costs <em>before</em> talking to suppliers directly.
+                        Think of this as a "prior" in Bayesian terms — we'll
+                        update it with real data (quotations) in the coming
+                        weeks. The goal is to check whether ₱3,000/intern is a
+                        reasonable starting point, not to lock in final numbers.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Detailed Budget -->
+            <section>
+                <h2>Detailed Budget Estimates</h2>
+
+                <!-- Venue -->
+                <h3>1. Venue Rental</h3>
+                <p>
+                    We need a venue that can accommodate ~480 guests (160
+                    interns × 2 guests each + buffer) in a theater/auditorium
+                    setup. Last year's batch used
+                    <strong>St. Paul University Manila</strong>, which we'll
+                    prioritize in canvassing.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Venue</th>
+                                <th>Capacity</th>
+                                <th class="text-right">Est. Rate</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>St. Paul University Manila</td>
+                                <td>TBD</td>
+                                <td class="text-right">₱50,000 – 100,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-low"
+                                        >Low</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BGC Arts Center (Globe Auditorium)</td>
+                                <td>500 seats</td>
+                                <td class="text-right">₱50,000 – 80,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GT-Toyota Asian Center (UP Diliman)</td>
+                                <td>460 seats</td>
+                                <td class="text-right">
+                                    ₱27,500 (3 hrs) + ₱5,300/hr
+                                </td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>UP Film Institute / Cine Adarna</td>
+                                <td>745 seats</td>
+                                <td class="text-right">₱40,000 – 70,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PICC (smaller halls)</td>
+                                <td>500+</td>
+                                <td class="text-right">₱80,000 – 150,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-low"
+                                        >Low</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="source">
+                    Sources:
+                    <a
+                        href="https://www.bgcartscenter.org/spaces"
+                        target="_blank"
+                        >BGC Arts Center</a
+                    >
+                    (capacity confirmed),
+                    <a
+                        href="https://www.lamudi.com.ph/journal/12-metro-manila-venues-for-conventions-conferences-or-exhibitions/"
+                        target="_blank"
+                        >Lamudi venue guide</a
+                    >
+                    (GT-Toyota rates)
+                </p>
+
+                <p><strong>Budget allocation:</strong> ₱60,000 – ₱100,000</p>
+
+                <!-- Pictorial -->
+                <h3>2. Pre-Graduation Pictorial</h3>
+                <p>
+                    This covers individual and group photos (toga, creative
+                    shots, etc.) for all 160 interns. Since we have varying duty
+                    schedules, we'll need a studio that can accommodate
+                    <strong>multiple shooting dates</strong>.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Studio</th>
+                                <th class="text-right">Per Head</th>
+                                <th>Inclusions</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Picture City</td>
+                                <td class="text-right">₱799</td>
+                                <td>
+                                    10 wallet prints, framed 8×10, toga use,
+                                    digital copies
+                                </td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Expo Photo Video (Package A)</td>
+                                <td class="text-right">₱780</td>
+                                <td>8 toga shots, 8×10 + wallet prints</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Expo Photo Video (Package B)</td>
+                                <td class="text-right">₱1,900</td>
+                                <td>
+                                    10 shots each (toga + creative), framed
+                                    11×14
+                                </td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>KLIK Media Group</td>
+                                <td class="text-right">~₱1,999</td>
+                                <td>
+                                    Unlimited shots, all digital, framed photo,
+                                    <strong>FREE hair &amp; makeup</strong>
+                                </td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Expo Photo Video (Package C)</td>
+                                <td class="text-right">₱2,900</td>
+                                <td>Premium package with multiple looks</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="source">
+                    Sources:
+                    <a href="https://picturecity.ph/" target="_blank"
+                        >Picture City</a
+                    >,
+                    <a
+                        href="https://www.expoevents.com.ph/graduation-picture"
+                        target="_blank"
+                        >Expo Photo Video</a
+                    >
+                </p>
+
+                <p><strong>Cost calculation (160 interns):</strong></p>
+                <ul>
+                    <li>
+                        Budget (₱780-₱799/head):
+                        <strong>₱124,800 – ₱127,840</strong>
+                    </li>
+                    <li>
+                        Mid-range (₱1,900-₱1,999/head):
+                        <strong>₱304,000 – ₱319,840</strong>
+                    </li>
+                    <li>Premium (₱2,900/head): <strong>₱464,000</strong></li>
+                </ul>
+
+                <p>
+                    <strong>Budget allocation:</strong> ₱125,000 – ₱200,000
+                    (leaning toward mid-range for quality)
+                </p>
+
+                <div class="callout callout-info">
+                    <div class="callout-title">💡 Note on pictorial</div>
+                    <p style="margin-bottom: 0">
+                        The pictorial is one of our largest expenses. We
+                        recommend the mid-range tier (around ₱1,500-₱2,000/head)
+                        for a good balance of quality and cost. The KLIK package
+                        is particularly attractive since it includes hair &amp;
+                        makeup, which would otherwise cost ₱500-₱1,000 extra per
+                        person.
+                    </p>
+                </div>
+
+                <!-- Event Documentation -->
+                <h3>3. Event Documentation (Ceremony Day)</h3>
+                <p>
+                    Photo and video coverage of the graduation ceremony itself.
+                    For a 480-person event, we recommend at least 2
+                    photographers + 2 videographers. Same-Day Edit (SDE) is a
+                    popular add-on that plays a highlight video during the
+                    event.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Provider</th>
+                                <th>Package</th>
+                                <th class="text-right">Price</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bliss Photography</td>
+                                <td>Package A (1+1 crew, cinematic video)</td>
+                                <td class="text-right">₱35,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bliss Photography</td>
+                                <td>Package B (2+2 crew)</td>
+                                <td class="text-right">₱50,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bliss Photography</td>
+                                <td>Package C (2+2 crew + SDE)</td>
+                                <td class="text-right">₱70,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Prodigital Media</td>
+                                <td>Package A-1 (1+1, 25-45 min video)</td>
+                                <td class="text-right">₱30,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Prodigital Media</td>
+                                <td>SDE add-on</td>
+                                <td class="text-right">₱25,000 – ₱35,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="source">
+                    Sources:
+                    <a
+                        href="https://www.myblisshd.com/blog/categories/debut"
+                        target="_blank"
+                        >Bliss Photography</a
+                    >,
+                    <a
+                        href="https://prodigitalmediaph.com/packages-rates/"
+                        target="_blank"
+                        >Prodigital Media</a
+                    >
+                </p>
+
+                <p>
+                    <strong>Budget allocation:</strong> ₱50,000 – ₱75,000 (with
+                    SDE)
+                </p>
+
+                <!-- Sound, Lights, Stage -->
+                <h3>4. Sound System, Lights, Stage &amp; Backdrop</h3>
+                <p>
+                    Technical production for the ceremony. Costs vary
+                    significantly based on complexity — from basic PA system to
+                    full LED wall production.
+                </p>
+
+                <h4>Sound &amp; Lights</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Setup</th>
+                                <th>Capacity</th>
+                                <th class="text-right">Est. Rate</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Basic PA + stage lights</td>
+                                <td>300-500 pax</td>
+                                <td class="text-right">₱9,000 – ₱15,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Professional setup (intelligent lights)</td>
+                                <td>400-500 pax</td>
+                                <td class="text-right">₱20,000 – ₱40,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Full production (LED wall, effects)</td>
+                                <td>500+ pax</td>
+                                <td class="text-right">₱50,000 – ₱100,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="source">
+                    Sources:
+                    <a
+                        href="https://djjvc.com/2013/08/13/lights-and-sounds-rental-manila-sound-system-rental/"
+                        target="_blank"
+                        >DJJVC.com</a
+                    >
+                    (published rates),
+                    <a href="https://www.orangemanila.com/" target="_blank"
+                        >Orange Lights and Sounds</a
+                    >,
+                    <a href="https://www.grandpearl.ph/" target="_blank"
+                        >Grand Pearl</a
+                    >
+                </p>
+
+                <h4>Stage &amp; Backdrop</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="text-right">Est. Rate</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Stage platform (16×12 ft to 24×16 ft)</td>
+                                <td class="text-right">₱8,000 – ₱35,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tarpaulin backdrop (20×10 ft)</td>
+                                <td class="text-right">₱1,500 – ₱5,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>LED wall (8-10 sqm, mid-size)</td>
+                                <td class="text-right">₱30,000 – ₱60,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Podium/lectern rental</td>
+                                <td class="text-right">₱1,500 – ₱5,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="source">
+                    Sources:
+                    <a
+                        href="https://starmarkph.com/tarpaulin-printing-outdoor-media-and-accessories-2/"
+                        target="_blank"
+                        >Starmark PH</a
+                    >
+                    (tarpaulin),
+                    <a
+                        href="https://bloomled.ph/products/movable-led-wall"
+                        target="_blank"
+                        >BloomLED</a
+                    >
+                    (LED wall)
+                </p>
+
+                <p>
+                    <strong>Budget allocation (combined):</strong> ₱40,000 –
+                    ₱80,000
+                </p>
+
+                <div class="callout callout-info">
+                    <div class="callout-title">
+                        💡 Note on venue-provided equipment
+                    </div>
+                    <p style="margin-bottom: 0">
+                        Some venues (like BGC Arts Center) include basic sound,
+                        lights, and stage setup in their rental fee. This could
+                        significantly reduce this line item. We'll clarify
+                        inclusions during canvassing.
+                    </p>
+                </div>
+
+                <!-- Baccalaureate Mass -->
+                <h3>5. Baccalaureate Mass</h3>
+                <p>
+                    A majority (52%) of survey respondents wanted a
+                    baccalaureate mass as part of graduation. Costs include
+                    priest honorarium, choir, and setup.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th class="text-right">Low</th>
+                                <th class="text-right">Mid</th>
+                                <th class="text-right">High</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Priest honorarium + transport</td>
+                                <td class="text-right">₱2,000</td>
+                                <td class="text-right">₱3,500</td>
+                                <td class="text-right">₱6,500</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Choir (external, 4-6 members + keys)</td>
+                                <td class="text-right">₱3,000</td>
+                                <td class="text-right">₱18,000</td>
+                                <td class="text-right">₱40,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Altar setup / flowers</td>
+                                <td class="text-right">₱5,000</td>
+                                <td class="text-right">₱10,000</td>
+                                <td class="text-right">₱20,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mass booklets (160+ copies)</td>
+                                <td class="text-right">₱5,000</td>
+                                <td class="text-right">₱12,000</td>
+                                <td class="text-right">₱25,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr class="row-subtotal">
+                                <td><strong>Subtotal</strong></td>
+                                <td class="text-right">
+                                    <strong>₱15,000</strong>
+                                </td>
+                                <td class="text-right">
+                                    <strong>₱43,500</strong>
+                                </td>
+                                <td class="text-right">
+                                    <strong>₱91,500</strong>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="source">
+                    Sources:
+                    <a
+                        href="https://www.ucanews.com/news/philippine-bishops-to-end-priest-stipends-for-services/91202"
+                        target="_blank"
+                        >UCA News</a
+                    >
+                    (stipend policy),
+                    <a
+                        href="https://weddingsatwork.com/waw_directory/choirs/"
+                        target="_blank"
+                        >Weddings at Work</a
+                    >
+                    (choir directory)
+                </p>
+
+                <p><strong>Budget allocation:</strong> ₱20,000 – ₱45,000</p>
+
+                <!-- Printing -->
+                <h3>6. Printing (Programs, Invitations, Certificates)</h3>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="text-center">Qty</th>
+                                <th class="text-right">Rate</th>
+                                <th class="text-right">Total Est.</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Graduation programs (8-16 pages, A5)</td>
+                                <td class="text-center">500</td>
+                                <td class="text-right">₱50 – ₱100 each</td>
+                                <td class="text-right">₱25,000 – ₱50,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Invitations (cardstock)</td>
+                                <td class="text-center">500</td>
+                                <td class="text-right">₱30 – ₱50 each</td>
+                                <td class="text-right">₱15,000 – ₱25,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Certificates of completion</td>
+                                <td class="text-center">180</td>
+                                <td class="text-right">₱75 – ₱150 each</td>
+                                <td class="text-right">₱13,500 – ₱27,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Certificates of appreciation</td>
+                                <td class="text-center">30</td>
+                                <td class="text-right">₱100 – ₱150 each</td>
+                                <td class="text-right">₱3,000 – ₱4,500</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="source">
+                    Sources:
+                    <a
+                        href="https://www.metroprint.ph/express-booklet-printing-manila"
+                        target="_blank"
+                        >MetroPrint.ph</a
+                    >,
+                    <a
+                        href="https://www.printixels.com/2016/12/brochure-printing-services.html"
+                        target="_blank"
+                        >Printixels</a
+                    >
+                </p>
+
+                <p><strong>Budget allocation:</strong> ₱30,000 – ₱50,000</p>
+
+                <!-- Tokens -->
+                <h3>7. Tokens &amp; Giveaways</h3>
+
+                <h4>VIP / Guest Speaker Tokens (up to 15 pieces)</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th class="text-right">Per Piece</th>
+                                <th class="text-right">Total (15 pcs)</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Small acrylic plaque (6×4")</td>
+                                <td class="text-right">₱300 – ₱500</td>
+                                <td class="text-right">₱4,500 – ₱7,500</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Medium acrylic with stand (8×6")</td>
+                                <td class="text-right">₱500 – ₱800</td>
+                                <td class="text-right">₱7,500 – ₱12,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Glass/crystal award</td>
+                                <td class="text-right">₱800 – ₱1,500</td>
+                                <td class="text-right">₱12,000 – ₱22,500</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="source">
+                    Sources:
+                    <a href="https://www.glassplaqueawards.com/" target="_blank"
+                        >Awardextremes</a
+                    >, CardMasters PH
+                </p>
+
+                <h4>Intern Souvenirs (160 pieces)</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="text-right">Per Piece</th>
+                                <th class="text-right">Total (160 pcs)</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Custom acrylic keychains</td>
+                                <td class="text-right">₱30 – ₱60</td>
+                                <td class="text-right">₱4,800 – ₱9,600</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Soft enamel pins (custom)</td>
+                                <td class="text-right">₱60 – ₱100</td>
+                                <td class="text-right">₱9,600 – ₱16,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Custom ceramic mugs</td>
+                                <td class="text-right">₱80 – ₱150</td>
+                                <td class="text-right">₱12,800 – ₱24,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    <strong>Budget allocation:</strong> ₱15,000 – ₱30,000 (VIP
+                    tokens + intern souvenirs combined)
+                </p>
+
+                <!-- Decorations -->
+                <h3>8. Decorations &amp; Event Styling</h3>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>Description</th>
+                                <th class="text-right">Est. Cost</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Basic</td>
+                                <td>
+                                    Simple backdrop, basic balloons, minimal
+                                    flowers
+                                </td>
+                                <td class="text-right">₱15,000 – ₱30,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Standard</td>
+                                <td>
+                                    Themed backdrop, centerpieces, entrance arch
+                                </td>
+                                <td class="text-right">₱30,000 – ₱60,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Premium</td>
+                                <td>
+                                    Professional stylist, ceiling treatment,
+                                    premium florals
+                                </td>
+                                <td class="text-right">₱60,000 – ₱150,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-low"
+                                        >Low</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="source">
+                    Source:
+                    <a
+                        href="https://www.kawaiievents.com.ph/event-styling/"
+                        target="_blank"
+                        >Kawaii Events</a
+                    >
+                    (packages from ₱15,000)
+                </p>
+
+                <p><strong>Budget allocation:</strong> ₱20,000 – ₱40,000</p>
+
+                <!-- Pre-Grad Activities -->
+                <h3>9. Pre-Graduation Activities</h3>
+                <p>
+                    Materials for block reels, AVP (audio-visual presentation),
+                    poster campaigns, and other pre-grad content.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="text-right">Budget</th>
+                                <th class="text-right">Standard</th>
+                                <th class="text-center">Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AVP / Block reels video production</td>
+                                <td class="text-right">₱5,000 – ₱15,000</td>
+                                <td class="text-right">₱18,000 – ₱25,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tarpaulin / poster printing</td>
+                                <td class="text-right">₱5,000</td>
+                                <td class="text-right">₱10,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-high"
+                                        >High</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Miscellaneous materials</td>
+                                <td class="text-right">₱5,000</td>
+                                <td class="text-right">₱10,000</td>
+                                <td class="text-center">
+                                    <span class="confidence confidence-medium"
+                                        >Medium</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="source">
+                    Sources:
+                    <a
+                        href="https://prodigitalmediaph.com/packages-rates/"
+                        target="_blank"
+                        >Prodigital Media</a
+                    >
+                    (AVP packages),
+                    <a href="https://tarpaulinprinting.ph/" target="_blank"
+                        >Starmark/TarpaulinPrinting.ph</a
+                    >
+                </p>
+
+                <p><strong>Budget allocation:</strong> ₱15,000 – ₱30,000</p>
+            </section>
+
+            <!-- Budget Summary -->
+            <section>
+                <h2>Budget Summary</h2>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th class="text-right">Low Estimate</th>
+                                <th class="text-right">High Estimate</th>
+                                <th class="text-right">Proposed*</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Venue Rental</td>
+                                <td class="text-right">₱60,000</td>
+                                <td class="text-right">₱100,000</td>
+                                <td class="text-right">₱80,000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2. Pre-Graduation Pictorial (160 interns)
+                                </td>
+                                <td class="text-right">₱125,000</td>
+                                <td class="text-right">₱200,000</td>
+                                <td class="text-right">₱160,000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3. Event Documentation (Photo/Video/SDE)
+                                </td>
+                                <td class="text-right">₱50,000</td>
+                                <td class="text-right">₱75,000</td>
+                                <td class="text-right">₱60,000</td>
+                            </tr>
+                            <tr>
+                                <td>4. Sound, Lights, Stage &amp; Backdrop</td>
+                                <td class="text-right">₱40,000</td>
+                                <td class="text-right">₱80,000</td>
+                                <td class="text-right">₱50,000</td>
+                            </tr>
+                            <tr>
+                                <td>5. Baccalaureate Mass</td>
+                                <td class="text-right">₱20,000</td>
+                                <td class="text-right">₱45,000</td>
+                                <td class="text-right">₱30,000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    6. Printing (programs, invites,
+                                    certificates)
+                                </td>
+                                <td class="text-right">₱30,000</td>
+                                <td class="text-right">₱50,000</td>
+                                <td class="text-right">₱35,000</td>
+                            </tr>
+                            <tr>
+                                <td>7. Tokens &amp; Giveaways</td>
+                                <td class="text-right">₱15,000</td>
+                                <td class="text-right">₱30,000</td>
+                                <td class="text-right">₱20,000</td>
+                            </tr>
+                            <tr>
+                                <td>8. Decorations &amp; Styling</td>
+                                <td class="text-right">₱20,000</td>
+                                <td class="text-right">₱40,000</td>
+                                <td class="text-right">₱25,000</td>
+                            </tr>
+                            <tr>
+                                <td>9. Pre-Graduation Activities</td>
+                                <td class="text-right">₱15,000</td>
+                                <td class="text-right">₱30,000</td>
+                                <td class="text-right">₱20,000</td>
+                            </tr>
+                            <tr class="row-subtotal">
+                                <td><strong>Subtotal</strong></td>
+                                <td class="text-right">
+                                    <strong>₱375,000</strong>
+                                </td>
+                                <td class="text-right">
+                                    <strong>₱650,000</strong>
+                                </td>
+                                <td class="text-right">
+                                    <strong>₱480,000</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Contingency (~10%)</td>
+                                <td class="text-right">—</td>
+                                <td class="text-right">—</td>
+                                <td class="text-right">~₱48,000*</td>
+                            </tr>
+                            <tr class="row-total">
+                                <td><strong>TOTAL RANGE</strong></td>
+                                <td class="text-right">
+                                    <strong>₱375,000</strong>
+                                </td>
+                                <td class="text-right">
+                                    <strong>₱650,000</strong>
+                                </td>
+                                <td class="text-right">
+                                    <strong>₱480,000</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="source" style="margin-top: 16px">
+                    *"Proposed" column represents our target allocation within
+                    the ₱480,000 budget. Contingency is included within the
+                    ₱480,000 by keeping proposed allocations conservative (below
+                    midpoint for most items).
+                </p>
+
+                <div class="budget-summary">
+                    <h3>Proposed Collection</h3>
+                    <div class="amount">₱480,000</div>
+                    <div class="per-intern">
+                        ₱3,000 per intern × 160 interns
+                    </div>
+                    <div class="note">
+                        Falls within our estimated range of ₱375,000 – ₱650,000
+                    </div>
+                </div>
+
+                <h3>How does ₱3,000 compare?</h3>
+                <div class="comparison-grid">
+                    <div class="comparison-card">
+                        <div class="tier">Budget Tier</div>
+                        <div class="price">₱2,350</div>
+                        <div class="total">₱375,000 total</div>
+                    </div>
+                    <div class="comparison-card recommended">
+                        <div class="tier">Our Proposal</div>
+                        <div class="price">₱3,000</div>
+                        <div class="total">₱480,000 total</div>
+                        <div class="badge">✓ Survey Consensus</div>
+                    </div>
+                    <div class="comparison-card">
+                        <div class="tier">High Estimate</div>
+                        <div class="price">₱4,065</div>
+                        <div class="total">₱650,000 total</div>
+                    </div>
+                </div>
+
+                <div class="callout callout-success">
+                    <div class="callout-title">✅ Assessment</div>
+                    <p style="margin-bottom: 0">
+                        The ₱3,000 contribution gives us a reasonable budget
+                        that sits comfortably within our estimated range. It's
+                        above the bare minimum (allowing for decent quality) but
+                        below the high end (leaving room for negotiation and
+                        contingency). Combined with the strong survey consensus,
+                        we believe this is a defensible and fair amount.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Risks and Mitigations -->
+            <section>
+                <h2>What Could Go Wrong (And What We'll Do)</h2>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Risk</th>
+                                <th>Likelihood</th>
+                                <th>Our Plan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong
+                                        >Actual prices higher than
+                                        estimated</strong
+                                    >
+                                </td>
+                                <td>Medium</td>
+                                <td>
+                                    Get 3+ quotes per category; negotiate;
+                                    prioritize must-haves over nice-to-haves;
+                                    use built-in contingency
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong
+                                        >Some interns can't pay on time</strong
+                                    >
+                                </td>
+                                <td>Medium</td>
+                                <td>
+                                    Monthly payment option (₱500/month); payment
+                                    tracking system; follow-up reminders;
+                                    case-by-case flexibility
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Preferred venue unavailable</strong>
+                                </td>
+                                <td>Low-Medium</td>
+                                <td>
+                                    Book early (target: April 2026); have 2-3
+                                    backup venues ready
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong
+                                        >Supplier backs out / quality
+                                        issues</strong
+                                    >
+                                </td>
+                                <td>Low</td>
+                                <td>
+                                    Use reputable suppliers with reviews; clear
+                                    contracts with deliverables; 50% deposit
+                                    (industry standard)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Budget surplus</strong></td>
+                                <td>Low-Medium</td>
+                                <td>
+                                    Options: upgrade services, return excess
+                                    proportionally, or allocate to post-grad
+                                    fund — to be decided by batch
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Timeline -->
+            <section>
+                <h2>Timeline</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">February 2026</div>
+                        <div class="timeline-content">
+                            Payment collection begins (₱500/month or lump sum);
+                            this proposal shared with batch
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">February – March 2026</div>
+                        <div class="timeline-content">
+                            Formal canvassing: get quotations from venues,
+                            pictorial studios, suppliers (minimum 3 each)
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">March 2026</div>
+                        <div class="timeline-content">
+                            Present canvassing results; updated budget proposal
+                            with real numbers; batch decision on venue
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">April 2026</div>
+                        <div class="timeline-content">
+                            Lock in venue and major suppliers; sign contracts;
+                            pay deposits
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">May – July 2026</div>
+                        <div class="timeline-content">
+                            Finalize program; coordinate logistics; pictorial
+                            shoots (multiple dates)
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">July 31, 2026</div>
+                        <div class="timeline-content">
+                            Final payment deadline
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            First Week of August 2026
+                        </div>
+                        <div class="timeline-content">🎓 Graduation Day!</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Post-Graduation</div>
+                        <div class="timeline-content">
+                            Financial report and audit published for full
+                            transparency
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Next Steps -->
+            <section>
+                <h2>What We're Asking</h2>
+
+                <ol>
+                    <li>
+                        <strong
+                            >Approval to proceed with ₱3,000/intern
+                            collection</strong
+                        ><br />
+                        This matches the survey consensus and gives us a working
+                        budget that covers all essentials with reasonable
+                        quality.
+                    </li>
+                    <li>
+                        <strong>Your patience as we canvass</strong><br />
+                        We'll update this proposal with real quotations by
+                        March. Expect some numbers to change — that's normal and
+                        expected.
+                    </li>
+                    <li>
+                        <strong>Timely payments</strong><br />
+                        The monthly schedule (₱500/month, Feb–July) helps us pay
+                        deposits on time. Please try to keep up! But if you have
+                        difficulties, talk to us — we'll work something out.
+                    </li>
+                    <li>
+                        <strong>Feedback and questions</strong><br />
+                        If you see errors in our estimates, have supplier
+                        recommendations, or have concerns about any line item —
+                        let us know. This is everyone's graduation.
+                    </li>
+                </ol>
+
+                <div class="callout callout-info">
+                    <div class="callout-title">📬 Questions or Concerns?</div>
+                    <p style="margin-bottom: 0">
+                        Reach out to the Graduation Committee (including any
+                        council member). We're committed to transparency — your
+                        input matters!
+                    </p>
+                </div>
+            </section>
+
+            <!-- Acknowledgment -->
+            <section style="text-align: center; padding: 32px">
+                <p style="color: var(--gray-500); margin-bottom: 0">
+                    Your feedback makes our planning better. 💜
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p class="tagline">Patungo sa Higit Pa! 💜</p>
+                <p>Batch Masikhay 2026 Graduation Committee</p>
+                <p style="font-size: 0.85rem; margin-top: 16px">
+                    Last updated: February 2026 • Pre-canvassing estimates
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
